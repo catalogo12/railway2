@@ -1,7 +1,7 @@
 //trabajoFinal-index.js
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://mongo:pckblSmGkVEJYHxXXFXqlwVqgZxMZIVG@junction.proxy.rlwy.net:36988/baseDatosJose1');
+mongoose.connect('mongodb://mongo:27017/baseDatosJose1',{userNewUrlParser:true,useUnifiedTopology:true}).then(()=>console.log('MongoDB Conectada')).cath(err=>console.log(err));
 const express = require("express");
 const app=express();
 const cors = require("cors");
