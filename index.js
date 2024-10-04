@@ -1,7 +1,7 @@
 //trabajoFinal-index.js
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://mongo:pckblSmGkVEJYHxXXFXqlwVqgZxMZIVG@mongodb.railway.internal:27017/baseDatosJose1');
+mongoose.connect('mongodb://mongo:pckblSmGkVEJYHxXXFXqlwVqgZxMZIVG@junction.proxy.rlwy.net:36988/baseDatosJose1');
 const express = require("express");
 const app=express();
 const cors = require("cors");
