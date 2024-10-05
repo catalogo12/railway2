@@ -31,7 +31,7 @@ app.use(express.urlencoded({ exended: true }));
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
-app.post("https://railway2-production-33d8.up.railway.app:3000/anadirDatos",(req, res) =>{
+app.post("https://railway2-production-33d8.up.railway.app/anadirDatos",(req, res) =>{
                                    const productoInfo=req.body;
                                    const nuevoProducto= new rojo({
                                    
