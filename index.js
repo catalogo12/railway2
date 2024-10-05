@@ -1,7 +1,7 @@
 //trabajoFinal-index.js
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URL,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>console.log('MongoDB Conectada')).cath(err=>console.log(err));
+mongoose.connect(process.env.MONGO_URL,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>console.log('MongoDB Conectada')).catch(err=>console.log(err));
 const express = require("express");
 const app=express();
 const cors = require("cors");
